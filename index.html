@@ -34,6 +34,79 @@
       sequence 4-5-3-5-5, after which she chooses to hold, and adds her turn total of 22 points to her score.</p>
 
     <button class="button" class="flash"><span>Start Game! </span></button>
+    <!--Start page-->
+
+    <form id="player-names">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <p id="paragraph">Player One</p>
+            <input type="text" id="player1" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <p id="paragraph">Player Two</p>
+            <input type="text" id="player2" class="form-control">
+          </div>
+        </div>
+      </div>
+
+      <div class="buttonHolder">
+        <span class="btn btn-success" id="letsPlay">Play!</span>
+      </div>
+
+
+      <!--
+            <div class="buttonHolder">
+                <input id="button" type="button" value="Let's Play!" onclick="letsPlay();">
+            </div>
+        -->
+
+    </form>
+
+    <!--The Game-->
+    <div id="diceGame" class="panel panel-info">
+      <div class="panel-heading">
+        <h2 class="panel-title">Lets Play!!</h2>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="panel-body" id="score1">
+            <span id="displayScore1"></span>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="panel-body" id="score2">
+            <span id="displayScore2"></span>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <hr>
+
+      <div id="columnTotal">
+        <h5>Total: <span id="displayTotal"></span></h5>
+      </div>
+      <hr>
+
+      <div class="rollnHold">
+
+        <h3>Dice: <span id="dice-value"></span></h3>
+        <span class="btn btn-success" id="roll">Roll</span>
+        <span class="btn btn-success" id="hold">Hold</span>
+      </div>
+      <hr>
+      <div class="panel-footer">
+        <p><i> Made by D.k</i></p>
+      </div>
+
+    </div>
+
   </div>
 </body>
 
