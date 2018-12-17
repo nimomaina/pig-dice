@@ -1,24 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <img src="images/background.png" alt="background" id="background">
-      <button class="button"><span>Start Game! </span></button>
 
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
 
-  </body>
+<body>
+  <div class="container" class="align">
+    <h1 class="header">PIG DICE GAME</h1>
+    <img src="images/background.png" alt="background" id="background">
+    <h2 class="header">Game Rules</h2>
+    <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player
+      decides to "hold":</p><br>
+    <p>• If the player rolls a 1, they score nothing and it becomes the next player's
+      turn.</p><br>
+    <p>• If the player rolls any other number, it is added to their turn total and the
+      player's turn continues.</p><br>
+    <p>• If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's
+      turn.</p><br>
+    <p>• The first player to score 100 or more points wins.</p><br>
+    <p>For example, the first player, Nimo begins a turn with a roll of 5. Nimo could hold and score 5 points,
+      but chooses to roll again. Nimo rolls a 2, and could hold with a turn total of 7 points, but chooses to
+      roll again. Nimo rolls a 1, and must end her turn without scoring. The next player, Shiro, rolls the
+      sequence 4-5-3-5-5, after which she chooses to hold, and adds her turn total of 22 points to her score.</p>
+
+    <button class="button" class="flash"><span>Start Game! </span></button>
+  </div>
+</body>
+
 </html>
